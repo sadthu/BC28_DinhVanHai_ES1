@@ -1,5 +1,4 @@
 let arrColor = ['pallet','viridian','pewter','cerulean','vermillion','lavender','celadon','saffron','fuschia','cinnabar'];
-let arrBtn = '';
 let renderButton = () => {
     let html = '';
     for (let i = 0; i < arrColor.length; i++) {
@@ -21,6 +20,6 @@ let changeColor = (color) => {
 
 window.onload = function () {
     renderButton();
-    arrBtn = document.querySelectorAll('#colorContainer button');
+    let arrBtn = document.querySelectorAll('#colorContainer button');
     arrBtn[0].classList.add('active');
 }
